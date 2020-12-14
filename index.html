@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Todo app by Lotosney</title>
+  <title>| Todo app by Lotosney</title>
 
 </head>
 
@@ -25,11 +25,36 @@
         </div>
       </div>
     </header>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#"> Lotosney</a>.
+
+    <main class="main">
+      <div class="container">
+        <div class="input-area">
+          <div class="todo-icon">
+            <img src="images/icon-check.svg" alt="check">
+          </div>
+          <input type="text" class="input-todo" onkeydown="addToDo(event)" placeholder="Create a new todo.." />
+        </div>
+        <ul class="todos all">
+        </ul>
+        <div class="todos-status-bar" id="todos-status">
+          <div class="todos-amount">
+            No Items
+          </div>
+      
+        </div>
+   <div class="hint">
+      Drag and drop to render list
     </div>
-    <script src="main.js" type="application/javascript"></script>
+    </main>
+  
+ 
+
+
+
+  <div class="attribution">
+    Coded by <a href="#"> Lotosney</a>.
+  </div>
+  <script src="main.js" type="application/javascript"></script>
 
 </body>
 
